@@ -3,8 +3,7 @@
 ## Equipo
 
 * Nombre. [correo](correo). CC. 123456789
-* Nombre. [correo](correo). CC. 123456789
-* Isabela Bedoya Gaviria. [](isabela.bedoya@udea.edu.co). 1020106520
+* Isabela Bedoya Gaviria. [isabela.bedoya@udea.edu.co](isabela.bedoya@udea.edu.co). 1020106520
 
 ## Documentación
 
