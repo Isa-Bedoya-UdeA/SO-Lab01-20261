@@ -20,13 +20,13 @@ int printFile(const char *filename)
 
     char buffer[BUFFER_SIZE];
     
-    /* Leer línea por línea e imprimir */
+    /* 2. Leer línea por línea e imprimir */
     while (fgets(buffer, sizeof(buffer), fp) != NULL) {
         /* fgets incluye el '\n' si cabe en el buffer, por eso no agregamos otro */
         printf("%s", buffer);
     }
 
-    fclose(fp);
+    fclose(fp); // 3. Cerrar archivo
     return 0;  /* Éxito */
 }
 
