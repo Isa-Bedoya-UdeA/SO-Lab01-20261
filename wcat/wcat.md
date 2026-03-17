@@ -16,6 +16,44 @@ El objetivo es crear un ejecutable que lea archivos y muestre su contenido en la
 4. Si el programa intenta abrir un archivo y falla, debe imprimir el mensaje exacto `wcat: cannot open file` (seguido de una nueva línea) y salir con el código de estado 1.
 5. Si se especifican varios archivos en la línea de comandos, los archivos deben imprimirse en orden hasta que se llegue al final de la lista de archivos o se llegue a un error al abrir un archivo de dicha lista (en dicho momento se debe imprimir el mensaje de error y salir de `wcat`).
 
-¿Te gustaría que te ayude a estructurar el código base en C para manejar los argumentos de la línea de comandos?
+## Ejecución
 
-Por cierto, para desbloquear la funcionalidad completa de todas las aplicaciones, habilita la [actividad en las aplicaciones de Gemini](https://myactivity.google.com/product/gemini).
+### Compilación manual con `gcc`
+
+Desde el directorio `wcat/`, compila el programa con:
+
+```bash
+gcc -Wall -Wextra -std=c99 -o wcat wcat.c
+```
+
+Una vez compilado, puedes ejecutarlo de las siguientes maneras:
+
+```bash
+# Mostrar el contenido de un archivo
+./wcat archivo.txt
+
+# Mostrar múltiples archivos en orden
+./wcat archivo1.txt archivo2.txt
+
+# Sin argumentos (sale con código 0, sin output)
+./wcat
+
+# Archivo inexistente (imprime error y sale con código 1)
+./wcat no_existe.txt
+```
+
+---
+
+### Ejecución con `test.sh`
+
+El script `test.sh` compila automáticamente el programa, crea archivos de prueba temporales, ejecuta 7 pruebas y limpia los archivos generados.
+
+```bash
+# Dar permisos de ejecución (solo la primera vez)
+chmod +x test.sh
+
+# Ejecutar todas las pruebas
+./test.sh
+```
+
+Las pruebas cubren: un solo archivo, múltiples archivos, sin argumentos, archivo inexistente, error en medio de una lista, líneas largas (buffer) y verificación del mensaje de error exacto.
