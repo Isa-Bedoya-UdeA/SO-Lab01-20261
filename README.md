@@ -114,7 +114,7 @@ El script también compila `wzip` automáticamente para poder generar los archiv
 
 ## Vídeo
 
-Un enlace a un video de 10 minutos donde se sustente el desarrollo.
+Vídeo: [https://drive.google.com/file/d/1OHYu8-22Q8Xau1gBX7YmoGiS7eYBMQiH/view?usp=sharing](https://drive.google.com/file/d/1OHYu8-22Q8Xau1gBX7YmoGiS7eYBMQiH/view?usp=sharing)
 
 ---
 
